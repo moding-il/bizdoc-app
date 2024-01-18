@@ -51,7 +51,7 @@ SQL Server or [Oracle](https://www.nuget.org/packages/BizDoc.Storage.Oracle) con
 
 #### Configuration
 
-_bizdoc.json_ file on root folter self-maintained on project run.
+_bizdoc.json_ file on root folder is self-maintained on project run.
 
 ## Angular
 
