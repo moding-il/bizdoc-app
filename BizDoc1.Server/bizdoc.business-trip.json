@@ -1,0 +1,456 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/moding-il/bizdoc.core/master/bizdoc-schema.json",
+  "Forms": [
+    {
+      "Format": "E{0}",
+      "Group": null,
+      "Description": null,
+      "Template": "app-expense",
+      "Workflow": {
+        "Version": 0,
+        "Connectors": [
+          {
+            "Id": "connectornk2Jv",
+            "TargetID": "ownerpssHU",
+            "SourceID": "startC3hTA",
+            "Annotations": [],
+            "LineWidth": 0,
+            "Segments": [
+              {
+                "Type": "Orthogonal"
+              }
+            ],
+            "AddInfo": {},
+            "Type": "Orthogonal"
+          },
+          {
+            "Id": "connectorAEQBa",
+            "TargetID": "endpI6AQ",
+            "SourceID": "ownerpssHU",
+            "Annotations": [],
+            "LineWidth": 0,
+            "Segments": [
+              {
+                "Type": "Orthogonal"
+              }
+            ],
+            "AddInfo": {
+              "Action": "approve"
+            },
+            "Type": "Orthogonal"
+          }
+        ],
+        "Nodes": [
+          {
+            "Id": "ownerpssHU",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 235,
+            "OffsetY": 85,
+            "Shape": {
+              "Type": "Flow",
+              "Shape": "Process"
+            },
+            "Style": {},
+            "Annotations": [
+              {
+                "Content": "Owner"
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "owner",
+              "message": "\u0027Waiting for your choice!\u0027",
+              "standardTime": "05:00:00"
+            }
+          },
+          {
+            "Id": "endpI6AQ",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 235,
+            "OffsetY": 225,
+            "Shape": {
+              "Type": "Bpmn",
+              "Shape": "Event",
+              "Event": {
+                "Event": "End",
+                "Trigger": "None"
+              }
+            },
+            "Style": {
+              "Fill": "white"
+            },
+            "Annotations": [
+              {
+                "Content": ""
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "end",
+              "state": "closed"
+            }
+          },
+          {
+            "Id": "startC3hTA",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 125,
+            "OffsetY": -35,
+            "Shape": {
+              "Type": "Bpmn",
+              "Shape": "Event",
+              "Event": {
+                "Event": "Start",
+                "Trigger": "None"
+              }
+            },
+            "Style": {
+              "Fill": "white"
+            },
+            "Annotations": [
+              {
+                "Content": "",
+                "VerticalAlignment": "Center",
+                "HorizontalAlignment": "Center",
+                "Style": {
+                  "Fill": "transparent",
+                  "Color": "black",
+                  "FontSize": 12,
+                  "Bold": false,
+                  "Italic": false
+                }
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "start",
+              "state": "open"
+            }
+          }
+        ]
+      },
+      "Position": "None",
+      "Type": "BizDoc.BusinessTrip.Forms.Expense, BizDoc.BusinessTrip",
+      "Icon": "description",
+      "Name": "expense",
+      "Title": "Expense",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    },
+    {
+      "Format": "E{0}",
+      "Group": null,
+      "Description": null,
+      "Template": "app-extended-travel",
+      "Workflow": {
+        "Version": 0,
+        "Connectors": [
+          {
+            "Id": "connectornk2Jv",
+            "TargetID": "ownerpssHU",
+            "SourceID": "startC3hTA",
+            "Annotations": [],
+            "LineWidth": 0,
+            "Segments": [
+              {
+                "Type": "Orthogonal"
+              }
+            ],
+            "AddInfo": {},
+            "Type": "Orthogonal"
+          },
+          {
+            "Id": "connectorAEQBa",
+            "TargetID": "endpI6AQ",
+            "SourceID": "ownerpssHU",
+            "Annotations": [],
+            "LineWidth": 0,
+            "Segments": [
+              {
+                "Type": "Orthogonal"
+              }
+            ],
+            "AddInfo": {
+              "Action": "approve"
+            },
+            "Type": "Orthogonal"
+          }
+        ],
+        "Nodes": [
+          {
+            "Id": "ownerpssHU",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 235,
+            "OffsetY": 85,
+            "Shape": {
+              "Type": "Flow",
+              "Shape": "Process"
+            },
+            "Style": {},
+            "Annotations": [
+              {
+                "Content": "Owner"
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "owner",
+              "message": "\u0027Waiting for your choice!\u0027",
+              "standardTime": "05:00:00"
+            }
+          },
+          {
+            "Id": "endpI6AQ",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 235,
+            "OffsetY": 225,
+            "Shape": {
+              "Type": "Bpmn",
+              "Shape": "Event",
+              "Event": {
+                "Event": "End",
+                "Trigger": "None"
+              }
+            },
+            "Style": {
+              "Fill": "white"
+            },
+            "Annotations": [
+              {
+                "Content": ""
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "end",
+              "state": "closed"
+            }
+          },
+          {
+            "Id": "startC3hTA",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 125,
+            "OffsetY": -35,
+            "Shape": {
+              "Type": "Bpmn",
+              "Shape": "Event",
+              "Event": {
+                "Event": "Start",
+                "Trigger": "None"
+              }
+            },
+            "Style": {
+              "Fill": "white"
+            },
+            "Annotations": [
+              {
+                "Content": "",
+                "VerticalAlignment": "Center",
+                "HorizontalAlignment": "Center",
+                "Style": {
+                  "Fill": "transparent",
+                  "Color": "black",
+                  "FontSize": 12,
+                  "Bold": false,
+                  "Italic": false
+                }
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "start",
+              "state": "open"
+            }
+          }
+        ]
+      },
+      "Position": "None",
+      "Type": "BizDoc.BusinessTrip.Forms.ExtendedTravel, BizDoc.BusinessTrip",
+      "Icon": "local_offer",
+      "Name": "exTr",
+      "Title": "ExtendedBusinessTrip",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    },
+    {
+      "Format": "B{0}",
+      "Group": null,
+      "Description": null,
+      "Template": "app-travel",
+      "Workflow": {
+        "Version": 0,
+        "Connectors": [
+          {
+            "Id": "connectornk2Jv",
+            "TargetID": "ownerpssHU",
+            "SourceID": "startC3hTA",
+            "Annotations": [],
+            "LineWidth": 0,
+            "Segments": [
+              {
+                "Type": "Orthogonal"
+              }
+            ],
+            "AddInfo": {},
+            "Type": "Orthogonal"
+          },
+          {
+            "Id": "connectorAEQBa",
+            "TargetID": "endpI6AQ",
+            "SourceID": "ownerpssHU",
+            "Annotations": [],
+            "LineWidth": 0,
+            "Segments": [
+              {
+                "Type": "Orthogonal"
+              }
+            ],
+            "AddInfo": {
+              "Action": "approve"
+            },
+            "Type": "Orthogonal"
+          }
+        ],
+        "Nodes": [
+          {
+            "Id": "ownerpssHU",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 235,
+            "OffsetY": 85,
+            "Shape": {
+              "Type": "Flow",
+              "Shape": "Process"
+            },
+            "Style": {},
+            "Annotations": [
+              {
+                "Content": "Owner"
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "owner",
+              "message": "\u0027Waiting for your choice!\u0027",
+              "standardTime": "05:00:00"
+            }
+          },
+          {
+            "Id": "endpI6AQ",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 235,
+            "OffsetY": 225,
+            "Shape": {
+              "Type": "Bpmn",
+              "Shape": "Event",
+              "Event": {
+                "Event": "End",
+                "Trigger": "None"
+              }
+            },
+            "Style": {
+              "Fill": "white"
+            },
+            "Annotations": [
+              {
+                "Content": ""
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "end",
+              "state": "closed"
+            }
+          },
+          {
+            "Id": "startC3hTA",
+            "Width": 50,
+            "Height": 50,
+            "OffsetX": 125,
+            "OffsetY": -35,
+            "Shape": {
+              "Type": "Bpmn",
+              "Shape": "Event",
+              "Event": {
+                "Event": "Start",
+                "Trigger": "None"
+              }
+            },
+            "Style": {
+              "Fill": "white"
+            },
+            "Annotations": [
+              {
+                "Content": "",
+                "VerticalAlignment": "Center",
+                "HorizontalAlignment": "Center",
+                "Style": {
+                  "Fill": "transparent",
+                  "Color": "black",
+                  "FontSize": 12,
+                  "Bold": false,
+                  "Italic": false
+                }
+              }
+            ],
+            "AddInfo": {
+              "nodeType": "start",
+              "state": "open"
+            }
+          }
+        ]
+      },
+      "Position": "None",
+      "Type": "BizDoc.BusinessTrip.Forms.Trip, BizDoc.BusinessTrip",
+      "Icon": "description",
+      "Name": "travel",
+      "Title": "BusinessTrip",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    }
+  ],
+  "Reports": [
+    {
+      "Type": "BizDoc.BusinessTrip.Reports.AbroadPersonnel, BizDoc.BusinessTrip",
+      "Name": "abroad-personnel",
+      "Title": "AbroadPersonnel",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    }
+  ],
+  "Types": [
+    {
+      "Type": "BizDoc.BusinessTrip.DataSource.Services, BizDoc.BusinessTrip",
+      "Name": "services",
+      "Title": "Services",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    },
+    {
+      "Type": "BizDoc.BusinessTrip.DataSource.Purposes, BizDoc.BusinessTrip",
+      "Name": "purposes",
+      "Title": "Purposes",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    },
+    {
+      "Type": "BizDoc.BusinessTrip.DataSource.Customers, BizDoc.BusinessTrip",
+      "Name": "customers",
+      "Title": "Customers",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    },
+    {
+      "Type": "BizDoc.BusinessTrip.DataSource.Projects, BizDoc.BusinessTrip",
+      "Name": "projects",
+      "Title": "Projects",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    },
+    {
+      "Type": "BizDoc.BusinessTrip.DataSource.Countries, BizDoc.BusinessTrip",
+      "Name": "countries",
+      "Title": "Countries",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    }
+  ],
+  "Utilities": [
+    {
+      "Template": "app-profiles",
+      "Type": "BizDoc.BusinessTrip.Utilities.Profiles, BizDoc.BusinessTrip",
+      "Name": "profiles",
+      "Title": "Profiles",
+      "ResourceType": "BizDoc.BusinessTrip.Resources.Strings, BizDoc.BusinessTrip"
+    }
+  ]
+}

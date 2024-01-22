@@ -6,6 +6,8 @@ Workflow app on top of enterprise data analysis.
 
 * Business-Trip [NuGet](https://www.nuget.org/packages/BizDoc.Applications.Business-Trip/) [npm](https://www.npmjs.com/package/@bizdoc-apps/business-trip)
 
+* Invoice-Scan [NuGet](https://www.nuget.org/packages/BizDoc.Applications.Invoice-Scan/) [npm](https://www.npmjs.com/package/@bizdoc-apps/invoice-scan)
+
 * Priority [NuGet](https://www.nuget.org/packages/BizDoc.Infrastructure.Priority) [npm](https://www.npmjs.com/@bizdoc/priority)
 
 * MFG/PRO [NuGet](https://www.nuget.org/packages/BizDoc.Infrastructure.Mfg) [npm](https://www.npmjs.com/@bizdoc/mfg)
