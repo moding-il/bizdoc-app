@@ -78,10 +78,18 @@ export class MyWidget implements WidgetComponent<Item[]> {
 
 ## Flutter
 
-Mobile app.
+Mobile app for Android and IOS.
 
 ```dart
-class _MyComponentState extends State<MyComponent> {
+/// My for data model wrapping JSON Map
+class MyModel {
+  final Map _data;
+  MyModel(this._data);
+  String? get subject => _data['subject'];
+  set subject(String? val) => _data['subject'] = val;
+}
+/// Stateful form access via [BizDocFormState] 
+class _MyFormWidgetState extends State<MyComponent> {
   late BizDocFormState _state;
   late MyModel _model;
   @override initState() {
@@ -90,10 +98,31 @@ class _MyComponentState extends State<MyComponent> {
     super.initState();
   }
 }
+
+/// Main app [BizDocApp] options. Register my form widget 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return BizDocApp(
+      authentication: FormIdentity(),
+      serverAddress: 'https://10.0.2.2:4200/',
+      firebaseSettings: FirebaseSettings(...),
+      routes: {
+        'my-form': (ctx) => MyFormWidget()
+      },
+      modules: [],
+    );
+  }
+}
 ```
 
+On complete referece to provided services consult documentation.
+
+#### References
+
 [pub.dev](https://pub.dev/packages/bizdoc)
+[Material 3](https://m3.material.io/develop/flutter)
 
 ## More Help
 
-[wiki](https://github.com/moding-il/bizdoc.core/wiki)
+Complete documentation can be found on project [wiki](https://github.com/moding-il/bizdoc.core/wiki).
