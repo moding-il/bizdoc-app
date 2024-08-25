@@ -15,14 +15,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="BizDoc.Applications.Business-Trip" Version="8.1.1" />
-		<PackageReference Include="BizDoc.Authentication.FormIdentity" Version="8.7.2" />
-		<PackageReference Include="BizDoc.Core" Version="8.13.15" />
-		<PackageReference Include="BizDoc.Storage.SqlServer" Version="8.2.7" />
+		<PackageReference Include="BizDoc.Authentication.FormIdentity" Version="8.9.0" />
+		<PackageReference Include="BizDoc.Core" Version="8.27.4" />
+		<PackageReference Include="BizDoc.Storage.SqlServer" Version="8.5.1" />
 		<PackageReference Include="Microsoft.AspNetCore.SpaProxy">
 			<Version>8.*-*</Version>
 		</PackageReference>
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.2" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -15,12 +15,6 @@ builder.Services.AddBizDoc(options =>
         options.Password.RequireUppercase = false;
         options.Password.RequireDigit = false;
         options.Password.RequireNonAlphanumeric = false;
-    }).
-    AddBusinessTrip(options =>
-    {
-        if (builder.Environment.IsDevelopment())
-            options.Caching = TimeSpan.Zero;
-
     });
 
 
