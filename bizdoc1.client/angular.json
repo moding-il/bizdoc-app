@@ -29,6 +29,10 @@
             "polyfills": [
               "zone.js"
             ],
+            "allowedCommonJsDependencies": [
+              "dayjs/*",
+              "ace-builds/*"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -90,12 +94,12 @@
               "buildTarget": "bizdoc1.client:build:production"
             },
             "development": {
+              "proxyConfig": "src/proxy.conf.js",
               "buildTarget": "bizdoc1.client:build:development"
             }
           },
           "defaultConfiguration": "development",
           "options": {
-            "proxyConfig": "src/proxy.conf.js"
           }
         },
         "extract-i18n": {
@@ -114,13 +118,55 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [],
-            "karmaConfig": "karma.conf.js"
+              "src/assets",
+              "assets",
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets/icons",
+                  "output": "./assets/icons"
+                },
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets/js",
+                  "output": "./js"
+                },
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets",
+                  "output": "."
+                },
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets/i18n/cldr-data/main/he",
+                  "output": "./assets/i18n/cldr-data/main/he"
+                },
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets/sounds",
+                  "output": "./assets/sounds"
+                },
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets/themes",
+                  "output": "./assets/themes"
+                },
+                {
+                  "glob": "*/**",
+                  "input": "./node_modules/@bizdoc/core/assets/system",
+                  "output": "./assets/system"
+                }
+              ],
+              "styles",
+              :,
+              [
+                "src/styles.scss"
+              ],
+              "scripts",
+              :,
+              [],
+              "karmaConfig",
+              :,
+              "karma.conf.js"
           }
         }
       }

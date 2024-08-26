@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<InvariantGlobalization>true</InvariantGlobalization>
-		<SpaRoot>..\angularapp1.client</SpaRoot>
+		<SpaRoot>..\bizdoc1.client</SpaRoot>
 		<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
 		<SpaProxyServerUrl>https://localhost:4200</SpaProxyServerUrl>
 	</PropertyGroup>
@@ -25,13 +25,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\angularapp1.client\angularapp.client.esproj">
+		<ProjectReference Include="..\bizdoc1.client\bizdoc.client.esproj">
 			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 		</ProjectReference>
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Controllers\" />
 	</ItemGroup>
 
 </Project>

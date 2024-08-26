@@ -1,17 +1,15 @@
 ﻿{
-  "$schema": "./ClientApp/node_modules/@bizdoc/core/assets/bizdoc-schema.json",
+  "$schema": "https://raw.githubusercontent.com/moding-il/bizdoc.core/master/bizdoc-schema.json",
   "Currencies": [
     {
       "Symbol": "$",
-      "Name": "USD",
-      "Title": "USD"
+      "Title": "USD",
+      "Name": "USD"
     }
   ],
   "Forms": [
     {
       "Format": "S{0}",
-      "Group": null,
-      "Description": null,
       "Template": "bizdoc-support-form",
       "Workflow": {
         "Version": 0,
@@ -137,51 +135,51 @@
       },
       "Position": "None",
       "Type": "BizDoc.Configuration.Forms.SupportCall",
+      "Title": "SupportCall",
       "Icon": "support",
       "Name": "support-call",
-      "Title": "SupportCall",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Folders": [
     {
+      "Title": "Drafts",
       "Icon": "drafts",
       "Name": "df",
-      "Title": "Drafts",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
+      "Title": "Inbox",
       "Icon": "inbox",
       "Name": "ib",
-      "Title": "Inbox",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
+      "Title": "SentItems",
       "Icon": "archive",
       "Name": "si",
-      "Title": "SentItems",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
+      "Title": "Mentions",
       "Icon": "alternate_email",
       "Name": "tag",
-      "Title": "Mentions",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
+      "Title": "DeletedItems",
       "Icon": "delete_outline",
       "Name": "di",
-      "Title": "DeletedItems",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Attributes": [
     {
       "DataType": "states",
-      "Type": "BizDoc.Configuration.Attributes.DocumentState",
+      "Type": "BizDoc.Core.Attributes.DocumentState",
+      "Title": "DocumentState",
       "Disabled": true,
       "Name": "document-state",
-      "Title": "DocumentState",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
@@ -190,81 +188,73 @@
       "Visible": false,
       "Template": "file-control",
       "Type": "BizDoc.Configuration.Controls.FilePicker",
+      "Title": "File",
       "Icon": "attach_file",
       "Name": "file",
-      "Title": "File",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "select-control",
       "Type": "BizDoc.Configuration.Controls.Select",
+      "Title": "Select",
       "Icon": "unfold_more",
       "Name": "select",
-      "Title": "Select",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
-      "Template": "select-control",
-      "Type": "BizDoc.Configuration.Controls.Autocomplete",
-      "Icon": "border_color",
-      "Name": "autocomplete",
-      "Title": "Autocomplete",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "date-control",
       "Type": "BizDoc.Configuration.Controls.DatePicker",
+      "Title": "Date",
       "Icon": "event",
       "Name": "date",
-      "Title": "Date",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "checklist-control",
       "Type": "BizDoc.Configuration.Controls.Checklist",
+      "Title": "Checklist",
       "Icon": "checklist",
       "Name": "checklist",
-      "Title": "Checklist",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "address-control",
       "Type": "BizDoc.Configuration.Controls.Address",
+      "Title": "Address",
       "Icon": "other_houses",
       "Name": "address",
-      "Title": "Address",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "radio-button-control",
       "Type": "BizDoc.Configuration.Controls.RadioButton",
+      "Title": "RadioButton",
       "Icon": "radio_button_checked",
       "Name": "radio-button",
-      "Title": "RadioButton",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "yesno-control",
       "Type": "BizDoc.Configuration.Controls.YesNo",
+      "Title": "YesNo",
       "Icon": "check_circle",
       "Name": "yes-no",
-      "Title": "YesNo",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "checkbox-control",
       "Type": "BizDoc.Configuration.Controls.Checkbox",
+      "Title": "Checkbox",
       "Icon": "check_box",
       "Name": "checkbox",
-      "Title": "Checkbox",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "switch-control",
       "Type": "BizDoc.Configuration.Controls.Switch",
+      "Title": "Switch",
       "Icon": "toggle_on",
       "Name": "switch",
-      "Title": "Switch",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -272,100 +262,117 @@
       "Template": "html-control",
       "System": true,
       "Type": "BizDoc.Configuration.Controls.Container",
+      "Title": "Container",
       "Icon": "table_rows",
       "Name": "container",
-      "Title": "Container",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "timespan-control",
       "System": true,
       "Type": "BizDoc.Configuration.Controls.Timespan",
+      "Title": "Timespan",
       "Icon": "timelapse",
       "Name": "timespan",
-      "Title": "Timespan",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "localized-text-control",
       "System": true,
       "Type": "BizDoc.Configuration.Controls.LocalizedText",
+      "Title": "LocalizedText",
       "Icon": "translate",
       "Name": "localized-text",
-      "Title": "LocalizedText",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "programmable-expression-control",
       "System": true,
       "Type": "BizDoc.Configuration.Controls.ProgrammableExpression",
+      "Title": "ProgrammableExpression",
       "Icon": "code",
       "Name": "programmable-expression",
-      "Title": "ProgrammableExpression",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "time-control",
       "Type": "BizDoc.Configuration.Controls.TimePicker",
+      "Title": "Time",
       "Icon": "schedule",
       "Name": "time",
-      "Title": "Time",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "tags-control",
       "Type": "BizDoc.Configuration.Controls.Chips",
+      "Title": "Chips",
       "Icon": "label",
       "Name": "chips",
-      "Title": "Chips",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "html-control",
       "Type": "BizDoc.Configuration.Controls.Html",
+      "Title": "Html",
       "Icon": "html",
       "Name": "html",
-      "Title": "Html",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "number-control",
       "Type": "BizDoc.Configuration.Controls.Number",
+      "Title": "Numeric",
       "Icon": "123",
       "Name": "number",
-      "Title": "Numeric",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "signature-control",
       "Type": "BizDoc.Configuration.Controls.Signature",
+      "Title": "Signature",
       "Icon": "gesture",
       "Name": "signature",
-      "Title": "Signature",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "date-range-control",
       "Type": "BizDoc.Configuration.Controls.DateRangePicker",
+      "Title": "DateRange",
       "Icon": "date_range",
       "Name": "date-range",
-      "Title": "DateRange",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "textarea-control",
       "Type": "BizDoc.Configuration.Controls.TextArea",
+      "Title": "TextArea",
       "Icon": "rtt",
       "Name": "text-area",
-      "Title": "TextArea",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "text-control",
       "Type": "BizDoc.Configuration.Controls.Text",
+      "Title": "Text",
       "Icon": "text_fields",
       "Name": "text",
-      "Title": "Text",
+      "ResourceType": "BizDoc.Core.Resources.Strings"
+    },
+    {
+      "Template": "axes-picker-control",
+      "Type": "BizDoc.Configuration.Controls.AxesPicker",
+      "Title": "Axes",
+      "Icon": "finance_chip",
+      "Name": "axes-picker",
+      "ResourceType": "BizDoc.Core.Resources.Strings"
+    }
+  ],
+  "Tags": [
+    {
+      "Template": "bizdoc-role-in-route-tag",
+      "Type": "BizDoc.Core.Generics.Tags.RoleInRoute",
+      "Title": "RoleInRoute",
+      "Name": "role-in-route",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
@@ -373,174 +380,182 @@
     {
       "Template": "bizdoc-documents",
       "Type": "BizDoc.Configuration.Reports.CubeDocuments",
+      "Title": "Documents",
       "Icon": "article",
       "Name": "cube-documents",
-      "Title": "Documents",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-cube-usage",
       "Type": "BizDoc.Configuration.Reports.CubeUsage",
+      "Title": "ChartUsage",
       "Icon": "show_chart",
       "Name": "cube-usage",
-      "Title": "ChartUsage",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
-      "Template": "bizdoc-role-performance",
-      "Type": "BizDoc.Configuration.Reports.RolePerformance",
-      "Icon": "commit",
-      "Name": "role-performance",
-      "Title": "Performance",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Reports.Substitution",
+      "Title": "Substitution",
       "Icon": "supervised_user_circle",
       "Name": "substitution",
-      "Title": "Substitution",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-tasks",
       "Type": "BizDoc.Configuration.Reports.PendingTasks",
+      "Title": "Pending",
       "Icon": "add_task",
       "Name": "tasks",
-      "Title": "Pending",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-timeline",
       "Type": "BizDoc.Configuration.Reports.Timeline",
+      "Title": "Timeline",
       "Icon": "mediation",
       "Name": "timeline",
-      "Title": "Timeline",
+      "ResourceType": "BizDoc.Core.Resources.Strings"
+    },
+    {
+      "Template": "bizdoc-performance-hilo",
+      "Type": "BizDoc.Configuration.Reports.PerformanceHilo",
+      "Title": "PerformanceHilo",
+      "Icon": "candlestick_chart",
+      "Name": "performance-hilo",
+      "ResourceType": "BizDoc.Core.Resources.Strings"
+    },
+    {
+      "Template": "bizdoc-performance-wind",
+      "Type": "BizDoc.Configuration.Reports.PerformanceWind",
+      "Title": "PerformanceWind",
+      "Icon": "speed",
+      "Name": "performance-wind",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "States": [
     {
-      "Name": "draft",
       "Title": "Draft",
+      "Name": "draft",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Past": "Opened",
       "Color": "green",
-      "Name": "open",
       "Title": "Open",
+      "Name": "open",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Future": "WillClose",
-      "Name": "closed",
       "Title": "Closed",
+      "Name": "closed",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
-      "Name": "withdrawn",
       "Title": "Withdrawn",
+      "Name": "withdrawn",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Future": "WillBeRejected",
       "Shape": "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z",
-      "Name": "rejected",
       "Title": "Rejected",
+      "Name": "rejected",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Types": [
     {
       "Type": "BizDoc.Configuration.Types.Actions",
-      "Name": "actions",
       "Title": "Actions",
+      "Name": "actions",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Currencies",
-      "Name": "currencies",
       "Title": "Currencies",
+      "Name": "currencies",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Documents",
-      "Name": "documents",
       "Title": "Documents",
+      "Name": "documents",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Folders",
-      "Name": "folders",
       "Title": "Folders",
+      "Name": "folders",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Forms",
-      "Name": "forms",
       "Title": "Forms",
+      "Name": "forms",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Groups",
-      "Name": "groups",
       "Title": "Groups",
+      "Name": "groups",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Months",
-      "Name": "months",
       "Title": "Months",
+      "Name": "months",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Quarters",
-      "Name": "quarters",
       "Title": "Quarters",
+      "Name": "quarters",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Roles",
-      "Name": "roles",
       "Title": "Roles",
+      "Name": "roles",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Sources",
-      "Name": "sources",
       "Title": "Sources",
+      "Name": "sources",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.States",
-      "Name": "states",
       "Title": "States",
+      "Name": "states",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Users",
-      "Name": "users",
       "Title": "Users",
+      "Name": "users",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.Years",
-      "Name": "years",
       "Title": "Years",
+      "Name": "years",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Types.YesNo",
-      "Name": "yes-no",
       "Title": "YesNo",
+      "Name": "yes-no",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Roles": [
     {
       "DataType": "users",
-      "Name": "directManager",
       "Title": "DirectManager",
+      "Name": "directManager",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
@@ -548,93 +563,93 @@
     {
       "Template": "bizdoc-actions-slice",
       "Type": "BizDoc.Configuration.Widgets.ActionsSlice",
-      "Name": "actions-slice",
       "Title": "ActionsStatistics",
+      "Name": "actions-slice",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-cube-performance",
       "Type": "BizDoc.Configuration.Widgets.CubePerformance",
-      "Name": "cube-compare",
       "Title": "Performance",
+      "Name": "cube-compare",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-personal-activity",
       "Type": "BizDoc.Configuration.Widgets.PersonalActivity",
-      "Name": "personal-activity",
       "Title": "YourActivity",
+      "Name": "personal-activity",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-personal-score",
       "Type": "BizDoc.Configuration.Widgets.PersonalScore",
-      "Name": "personal-score",
       "Title": "YourScore",
+      "Name": "personal-score",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Cols": 2,
       "Template": "bizdoc-recents",
-      "Type": "BizDoc.Configuration.Widgets.Recents",
-      "Name": "recents",
+      "Type": "BizDoc.Configuration.Widgets.RecentDocuments",
       "Title": "RecentActivity",
+      "Name": "recent-documents",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Rules": [
     {
       "Type": "BizDoc.Configuration.Rules.AnomalyRule",
-      "Name": "anomaly",
       "Title": "AnomalyRule",
+      "Name": "anomaly",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.DocumentModelRule",
-      "Name": "model",
       "Title": "DataModelRule",
+      "Name": "model",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.DocumentState",
-      "Name": "documentState",
       "Title": "DocumentState",
+      "Name": "documentState",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.IsOwnerRule",
-      "Name": "isOwner",
       "Title": "IsOwner",
+      "Name": "isOwner",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.IsSystemRule",
-      "Name": "isSystem",
       "Title": "IsSystem",
+      "Name": "isSystem",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.RecipientRole",
-      "Name": "recipientRole",
       "Title": "RecipientRole",
+      "Name": "recipientRole",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.UserFYIRule",
-      "Name": "fyi",
       "Title": "FYI",
+      "Name": "fyi",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.UserGroups",
-      "Name": "userGroups",
       "Title": "UserGroups",
+      "Name": "userGroups",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Rules.ValueRule",
-      "Name": "value",
       "Title": "ValueRule",
+      "Name": "value",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
@@ -649,14 +664,12 @@
       "PastFemale": "ApprovedFemale",
       "Verb": "ToApprove",
       "You": "YouApproved",
-      "YouMale": null,
-      "YouFemale": null,
       "Shape": "m22.785 8.46-9.045 9.05-4.53-4.53-3.01 3.02 7.54 7.545 12.065-12.065zm-6.785-8.46c8.835 0 16 7.17 16 16 0 8.835-7.165 16-16 16-8.83 0-16-7.165-16-16 0-8.83 7.17-16 16-16z",
       "Color": "darkgreen",
       "Type": "BizDoc.Workflow.Actions.Approve",
+      "Title": "Approve",
       "Icon": "done",
       "Name": "approve",
-      "Title": "Approve",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -665,15 +678,11 @@
       "Adjective": "AssignedAdjective",
       "AdjectivePlural": "AssignedAdjectivePlural",
       "Past": "Assigned",
-      "PastMale": null,
-      "PastFemale": null,
       "Verb": "ToAssign",
       "You": "YouAssigned",
-      "YouMale": null,
-      "YouFemale": null,
       "Type": "BizDoc.Workflow.Actions.Assign",
-      "Name": "assign",
       "Title": "Assign",
+      "Name": "assign",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -685,14 +694,11 @@
       "PastMale": "ConfirmedMale",
       "PastFemale": "ConfirmedFemale",
       "Verb": "ToConfirm",
-      "You": null,
-      "YouMale": null,
-      "YouFemale": null,
       "Shape": "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z",
       "Color": "blue",
       "Type": "BizDoc.Workflow.Actions.Confirm",
-      "Name": "confirm",
       "Title": "Confirm",
+      "Name": "confirm",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -705,11 +711,9 @@
       "PastFemale": "MovedFemale",
       "Verb": "ToMove",
       "You": "YouMoved",
-      "YouMale": null,
-      "YouFemale": null,
       "Type": "BizDoc.Workflow.Actions.MoveTo",
-      "Name": "move-to",
       "Title": "MoveTo",
+      "Name": "move-to",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -717,18 +721,12 @@
       "TitleFemale": "RecycleFemale",
       "Adjective": "Recycled",
       "AdjectivePlural": "RecycledPlural",
-      "Past": null,
-      "PastMale": null,
-      "PastFemale": null,
       "Verb": "ToRecycle",
-      "You": null,
-      "YouMale": null,
-      "YouFemale": null,
       "Group": 10,
       "Loggable": false,
       "Type": "BizDoc.Workflow.Actions.Recycle",
-      "Name": "recycle",
       "Title": "Recycle",
+      "Name": "recycle",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -741,14 +739,12 @@
       "PastFemale": "RejectedFemale",
       "Verb": "ToReject",
       "You": "YouRejected",
-      "YouMale": null,
-      "YouFemale": null,
       "Shape": "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z",
       "Color": "darkred",
       "Type": "BizDoc.Workflow.Actions.Reject",
+      "Title": "Reject",
       "Icon": "do_not_disturb_on",
       "Name": "reject",
-      "Title": "Reject",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -757,20 +753,13 @@
       "Adjective": "Reopened",
       "AdjectivePlural": "Reopened",
       "Past": "Reopened",
-      "PastMale": null,
-      "PastFemale": null,
       "Verb": "ToReopen",
-      "You": null,
-      "YouMale": null,
-      "YouFemale": null,
       "Type": "BizDoc.Workflow.Actions.Reopen",
-      "Name": "reopen",
       "Title": "Reopen",
+      "Name": "reopen",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
-      "TitleMale": null,
-      "TitleFemale": null,
       "Adjective": "RerouteAdjective",
       "AdjectivePlural": "RerouteAdjective",
       "Past": "Rerouted",
@@ -778,47 +767,33 @@
       "PastFemale": "ReroutedFemale",
       "Verb": "ToReroute",
       "You": "YouRerouted",
-      "YouMale": null,
-      "YouFemale": null,
       "Type": "BizDoc.Workflow.Actions.Reroute",
-      "Name": "reroute",
       "Title": "Reroute",
+      "Name": "reroute",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "TitleMale": "ReturnMale",
       "TitleFemale": "ReturnFemale",
-      "Adjective": null,
-      "AdjectivePlural": null,
       "Past": "Returned",
       "PastMale": "ReturnedMale",
       "PastFemale": "ReturnedFemale",
       "Verb": "ToReturn",
-      "You": null,
-      "YouMale": null,
-      "YouFemale": null,
       "Shape": "m29.959 8.746h2.041v12.246h-2.041zm-4.082 0h2.041v12.246h-2.041zm-4.082 0h2.041v12.246h-2.041zm-10.205-3.5-8.821 9.623 8.821 9.6229v-5.541h6.123v-8.1639h-6.123zm2.041-5.246v8.746h6.123v12.246h-6.123v8.7461l-13.631-14.869z",
       "Type": "BizDoc.Workflow.Actions.Return",
-      "Name": "return",
       "Title": "Return",
+      "Name": "return",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "TitleMale": "WithdrawMale",
       "TitleFemale": "WithdrawFemale",
-      "Adjective": null,
-      "AdjectivePlural": null,
       "Past": "Withdrawn",
-      "PastMale": null,
-      "PastFemale": null,
       "Verb": "ToWithdraw",
-      "You": null,
-      "YouMale": null,
-      "YouFemale": null,
       "Group": 5,
       "Type": "BizDoc.Workflow.Actions.Withdraw",
-      "Name": "withdraw",
       "Title": "Withdraw",
+      "Name": "withdraw",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -831,14 +806,12 @@
       "PastFemale": "RejectedFemale",
       "Verb": "ToReject",
       "You": "YouRejected",
-      "YouMale": null,
-      "YouFemale": null,
       "Shape": "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z",
       "Color": "darkred",
       "Type": "BizDoc.FormIdentity.Configuation.Actions.AuthorizedReject, BizDoc.Authentication.FormIdentity",
+      "Title": "Reject",
       "Icon": "do_not_disturb_on",
       "Name": "authorized-reject",
-      "Title": "Reject",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -851,64 +824,62 @@
       "PastFemale": "ApprovedFemale",
       "Verb": "ToApprove",
       "You": "YouApproved",
-      "YouMale": null,
-      "YouFemale": null,
       "Shape": "m22.785 8.46-9.045 9.05-4.53-4.53-3.01 3.02 7.54 7.545 12.065-12.065zm-6.785-8.46c8.835 0 16 7.17 16 16 0 8.835-7.165 16-16 16-8.83 0-16-7.165-16-16 0-8.83 7.17-16 16-16z",
       "Color": "darkgreen",
       "Type": "BizDoc.FormIdentity.Configuation.Actions.AuthrizedApprove, BizDoc.Authentication.FormIdentity",
+      "Title": "Approve",
       "Icon": "done",
       "Name": "authrized-approve",
-      "Title": "Approve",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Jobs": [
     {
       "Type": "BizDoc.Core.Jobs.EscalateJob",
-      "Name": "escalate-job",
       "Title": "Escalate",
+      "Name": "escalate-job",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Core.Jobs.EventsAlertsJob",
+      "Title": "AlertEvents",
       "Icon": "event",
       "Name": "events-alerts-job",
-      "Title": "AlertEvents",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Core.Jobs.ExchangeRateJob",
+      "Title": "ExchangeRate",
       "Icon": "currency_exchange",
       "Name": "exchange-rate-job",
-      "Title": "ExchangeRate",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Core.Jobs.IMAPJob",
+      "Title": "IMAP",
       "Icon": "outgoing_mail",
       "Name": "imapjob",
-      "Title": "IMAP",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Core.Jobs.NudgeJob",
+      "Title": "Nudge",
       "Icon": "ring_volume",
       "Name": "nudge-job",
-      "Title": "Nudge",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Core.Jobs.POP3Job",
+      "Title": "POP3",
       "Icon": "outgoing_mail",
       "Name": "pop3-job",
-      "Title": "POP3",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Core.Jobs.SummaryMailJob",
+      "Title": "SummaryMail",
       "Icon": "summarize",
       "Name": "summary-mail-job",
-      "Title": "SummaryMail",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
@@ -916,72 +887,72 @@
     {
       "Template": "bizdoc-configuration-designer",
       "Type": "BizDoc.Configuration.Utilities.Architecture",
+      "Title": "Architecture",
       "Icon": "architecture",
       "Name": "architecture",
-      "Title": "Architecture",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-trace-utility",
       "Type": "BizDoc.Configuration.Utilities.DocumentTrace",
+      "Title": "DocumentTrace",
       "Icon": "pets",
       "Name": "document-trace",
-      "Title": "DocumentTrace",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-form-designer",
       "Type": "BizDoc.Configuration.Utilities.FormDesigner",
+      "Title": "FormDesigner",
       "Icon": "design_services",
       "Name": "form-designer",
-      "Title": "FormDesigner",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-patterns",
       "Type": "BizDoc.Configuration.Utilities.Patterns",
+      "Title": "Patterns",
       "Icon": "perm_data_setting",
       "Name": "patterns",
-      "Title": "Patterns",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Type": "BizDoc.Configuration.Utilities.Permissions",
+      "Title": "Permissions",
       "Icon": "security",
       "Name": "permissions",
-      "Title": "Permissions",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-positions",
       "Type": "BizDoc.Configuration.Utilities.Positions",
+      "Title": "Positions",
       "Icon": "assignment_ind",
       "Name": "positions",
-      "Title": "Positions",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-user-profiler",
       "Type": "BizDoc.Configuration.Utilities.Profiler",
+      "Title": "Profiler",
       "Icon": "admin_panel_settings",
       "Name": "profiler",
-      "Title": "Profiler",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-configuration-diff",
       "Type": "BizDoc.Configuration.Utilities.SystemDiff",
+      "Title": "ConfigurationDiff",
       "Icon": "dns",
       "Name": "configuration-diff",
-      "Title": "ConfigurationDiff",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-asp-users",
       "Type": "BizDoc.FormIdentity.Components.UsersUtility, BizDoc.Authentication.FormIdentity",
+      "Title": "Users",
       "Icon": "person_outline",
       "Name": "aspusers",
-      "Title": "Users",
       "ResourceType": "BizDoc.Authentication.FormIdentity.Strings, BizDoc.Authentication.FormIdentity"
     }
   ],
@@ -993,8 +964,8 @@
         "Data": "m21.915 18.71s9.2061 2.191 10.085 10.959h-32s2.629-9.647 10.518-10.525l2.14 9.151 1.572-0.010002 1.782-4.683-1.664-2.895h3.329l-1.598 2.966 2.037 4.581 1.226-0.010002zm-6.137-18.71c4.876 0 8.834 3.952 8.834 8.833 0 4.876-3.958 8.833-8.834 8.833-4.881 0-8.834-3.957-8.834-8.833 0-4.881 3.953-8.833 8.834-8.833z"
       },
       "Type": "BizDoc.Workflow.Activities.Assign",
-      "Name": "assign",
       "Title": "Assign",
+      "Name": "assign",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1003,8 +974,8 @@
         "Type": "Bpmn"
       },
       "Type": "BizDoc.Workflow.Activities.Email",
-      "Name": "email",
       "Title": "Email",
+      "Name": "email",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1017,8 +988,8 @@
         }
       },
       "Type": "BizDoc.Workflow.Activities.End",
-      "Name": "end",
       "Title": "End",
+      "Name": "end",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1029,8 +1000,8 @@
         "Shape": "Decision"
       },
       "Type": "BizDoc.Workflow.Activities.If",
-      "Name": "if",
       "Title": "Decision",
+      "Name": "if",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1044,8 +1015,8 @@
         }
       },
       "Type": "BizDoc.Workflow.Activities.Intermediate",
-      "Name": "intermediate",
       "Title": "Intermediate",
+      "Name": "intermediate",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1055,8 +1026,8 @@
         "Shape": "PaperTap"
       },
       "Type": "BizDoc.Workflow.Activities.Notify",
-      "Name": "notify",
       "Title": "Notify",
+      "Name": "notify",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1066,8 +1037,8 @@
         "Data": "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
       },
       "Type": "BizDoc.Workflow.Activities.Owner",
-      "Name": "owner",
       "Title": "Owner",
+      "Name": "owner",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1077,8 +1048,8 @@
         "Shape": "PreDefinedProcess"
       },
       "Type": "BizDoc.Workflow.Activities.Process",
-      "Name": "process",
       "Title": "Process",
+      "Name": "process",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1088,8 +1059,8 @@
         "Data": "m14.9 19.1h5.1c5.1 0 9.2 4.1 9.2 9.2v3.7h-29.2v-3.6c-1.9009e-7 -5.1 4.1-9.2 9.2-9.2h5.3c-0.59998 0.30002-2.3 1.2-2.3 2l2 1.1s-2 3.1-2 7.5c0 0.5 4.9 0.70001 4.9 0 0-4.5-1.9-7.6-1.9-7.6l1.9-1.1c0-0.89999-1.7-1.7-2.2-2zm-0.29999-19.1c4.5 0 8.1999 3.7 8.1999 8.2 0 4.5-3.6999 8.2-8.1999 8.2-4.5 0-8.2-3.7-8.2-8.2 0-4.5 3.7-8.2 8.2-8.2z"
       },
       "Type": "BizDoc.Workflow.Activities.Role",
-      "Name": "role",
       "Title": "Role",
+      "Name": "role",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1101,8 +1072,8 @@
         }
       },
       "Type": "BizDoc.Workflow.Activities.Sms",
-      "Name": "sms",
       "Title": "Sms",
+      "Name": "sms",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1115,8 +1086,8 @@
         }
       },
       "Type": "BizDoc.Workflow.Activities.Start",
-      "Name": "start",
       "Title": "Start",
+      "Name": "start",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1129,8 +1100,8 @@
         }
       },
       "Type": "BizDoc.Workflow.Activities.Switch",
-      "Name": "switch",
       "Title": "Switch",
+      "Name": "switch",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1143,8 +1114,8 @@
         }
       },
       "Type": "BizDoc.Workflow.Activities.Terminate",
-      "Name": "terminate",
       "Title": "Terminate",
+      "Name": "terminate",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1154,8 +1125,8 @@
         "Data": "m17.4 26.3v4h7v-4zm-8.2-7.1h10.8c5.1 0 9.2 4.1 9.2 9.2v3.6h-29.2v-3.6c-2.3262e-7 -5.1 4.1-9.2 9.2-9.2zm5.4-19.2c4.5 0 8.2 3.7 8.2 8.2 0 4.5-3.7 8.2-8.2 8.2-4.5 0-8.2-3.6-8.2-8.2s3.7-8.2 8.2-8.2z"
       },
       "Type": "BizDoc.Workflow.Activities.UserField",
-      "Name": "user-field",
       "Title": "UserForm",
+      "Name": "user-field",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1165,8 +1136,8 @@
         "Data": "m21.915 18.71s9.2061 2.191 10.085 10.959h-32s2.629-9.647 10.518-10.525l2.14 9.151 1.572-0.010002 1.782-4.683-1.664-2.895h3.329l-1.598 2.966 2.037 4.581 1.226-0.010002zm-6.137-18.71c4.876 0 8.834 3.952 8.834 8.833 0 4.876-3.958 8.833-8.834 8.833-4.881 0-8.834-3.957-8.834-8.833 0-4.881 3.953-8.833 8.834-8.833z"
       },
       "Type": "BizDoc.Workflow.Activities.UserNode",
-      "Name": "user-node",
       "Title": "UserNode",
+      "Name": "user-node",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
@@ -1176,8 +1147,8 @@
         "Data": "m14.9 19.1h5.1c5.1 0 9.2 4.1 9.2 9.2v3.7h-29.2v-3.6c-1.9009e-7 -5.1 4.1-9.2 9.2-9.2h5.3c-0.59998 0.30002-2.3 1.2-2.3 2l2 1.1s-2 3.1-2 7.5c0 0.5 4.9 0.70001 4.9 0 0-4.5-1.9-7.6-1.9-7.6l1.9-1.1c0-0.89999-1.7-1.7-2.2-2zm-0.29999-19.1c4.5 0 8.1999 3.7 8.1999 8.2 0 4.5-3.6999 8.2-8.1999 8.2-4.5 0-8.2-3.7-8.2-8.2 0-4.5 3.7-8.2 8.2-8.2z"
       },
       "Type": "BizDoc.Workflow.Activities.UserRole",
-      "Name": "user-role",
       "Title": "UserRole",
+      "Name": "user-role",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
@@ -1185,51 +1156,44 @@
     {
       "Template": "bizdoc-explore-view",
       "Type": "BizDoc.Configuration.Views.CubeExplore",
-      "Name": "cube-explore",
       "Title": "Documents",
+      "Name": "cube-explore",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-cube-matrix",
       "Type": "BizDoc.Configuration.Views.CubeMatrix",
-      "Name": "cube-matrix",
       "Title": "Matrix",
+      "Name": "cube-matrix",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-parallel-view",
       "Type": "BizDoc.Configuration.Views.CubeParallel",
-      "Name": "cube-parallel",
       "Title": "Parallel",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
-      "Template": "bizdoc-pivot-view",
-      "Type": "BizDoc.Configuration.Views.CubePivot",
-      "Name": "cube-pivot",
-      "Title": "Pivot",
+      "Name": "cube-parallel",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-cube-period",
       "Type": "BizDoc.Configuration.Views.CubeSummary",
-      "Name": "cube-summary",
       "Title": "Summary",
+      "Name": "cube-summary",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     },
     {
       "Template": "bizdoc-timeline",
       "Type": "BizDoc.Configuration.Views.Timeline",
-      "Name": "timeline",
       "Title": "Timeline",
+      "Name": "timeline",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ],
   "Sources": [
     {
-      "Type": "BizDoc.Configuration.Sources.CubeListing",
-      "Name": "cube-listing",
+      "Type": "BizDoc.Configuration.Search.AnalysisAxes",
       "Title": "Analysis",
+      "Name": "analysis-axes",
       "ResourceType": "BizDoc.Core.Resources.Strings"
     }
   ]

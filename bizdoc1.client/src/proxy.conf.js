@@ -1,10 +1,19 @@
+const { env } = require('process');
+
+const target = `https://localhost:${7162}`;
+
 const PROXY_CONFIG = [
   {
     context: [
-      '/api'
+      '/api/**'
     ],
-    target: "https://localhost:7134",
+    target,
     secure: false
+  },
+  {
+    context: ['/chub'],
+    target,
+    ws: true
   }
 ]
 

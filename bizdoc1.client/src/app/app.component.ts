@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-root',
   template: '<bizdoc></bizdoc>',
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
-    }
+  }
 }
