@@ -6,7 +6,7 @@ var connectionString = builder.Configuration.GetConnectionString("BizDocConnecti
 
 builder.Services.AddBizDoc(options =>
 {
-    options.ApplicationUri = "http://";
+    options.ApplicationUri = "https://";
 }).
     UseSqlServer(connectionString).
     AddFormIdentity(options =>

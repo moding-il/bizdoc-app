@@ -7,6 +7,20 @@
       "Name": "USD"
     }
   ],
+  "Devices": [
+    {
+      "ExecutionMode": "Challenge",
+      "Type": "BizDoc.Core.Messaging.Internals.Devices.EmailDevice",
+      "Title": "Email",
+      "Name": "email"
+    },
+    {
+      "ExecutionMode": "Challenge",
+      "Type": "BizDoc.Core.Messaging.Internals.Devices.SignalRDevice",
+      "Title": "SignalR",
+      "Name": "signalR"
+    }
+  ],
   "Forms": [
     {
       "Format": "S{0}",
@@ -176,7 +190,7 @@
   "Attributes": [
     {
       "DataType": "states",
-      "Type": "BizDoc.Core.Attributes.DocumentState",
+      "Type": "BizDoc.Configuration.Attributes.DocumentState",
       "Title": "DocumentState",
       "Disabled": true,
       "Name": "document-state",
@@ -549,6 +563,31 @@
       "Title": "YesNo",
       "Name": "yes-no",
       "ResourceType": "BizDoc.Core.Resources.Strings"
+    },
+    {
+      "Type": "BizDoc.Configuration.Controls.Select",
+      "Title": "Select",
+      "Name": "select"
+    },
+    {
+      "Type": "BizDoc.Configuration.Controls.Checklist",
+      "Title": "Checklist",
+      "Name": "checklist"
+    },
+    {
+      "Type": "BizDoc.Configuration.Controls.RadioButton",
+      "Title": "RadioButton",
+      "Name": "radio-button"
+    },
+    {
+      "Type": "BizDoc.Configuration.Controls.Checkbox",
+      "Title": "Checkbox",
+      "Name": "checkbox"
+    },
+    {
+      "Type": "BizDoc.Configuration.Controls.Switch",
+      "Title": "Switch",
+      "Name": "switch"
     }
   ],
   "Roles": [
@@ -1154,36 +1193,8 @@
   ],
   "Views": [
     {
-      "Template": "bizdoc-explore-view",
-      "Type": "BizDoc.Configuration.Views.CubeExplore",
-      "Title": "Documents",
-      "Name": "cube-explore",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
-      "Template": "bizdoc-cube-matrix",
-      "Type": "BizDoc.Configuration.Views.CubeMatrix",
-      "Title": "Matrix",
-      "Name": "cube-matrix",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
-      "Template": "bizdoc-parallel-view",
-      "Type": "BizDoc.Configuration.Views.CubeParallel",
-      "Title": "Parallel",
-      "Name": "cube-parallel",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
-      "Template": "bizdoc-cube-period",
-      "Type": "BizDoc.Configuration.Views.CubeSummary",
-      "Title": "Summary",
-      "Name": "cube-summary",
-      "ResourceType": "BizDoc.Core.Resources.Strings"
-    },
-    {
       "Template": "bizdoc-timeline",
-      "Type": "BizDoc.Configuration.Views.Timeline",
+      "Type": "BizDoc.Configuration.Insights.Timeline",
       "Title": "Timeline",
       "Name": "timeline",
       "ResourceType": "BizDoc.Core.Resources.Strings"
